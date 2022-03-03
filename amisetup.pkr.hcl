@@ -48,7 +48,7 @@ source "amazon-ebs" "ec2-user" {
 }
 
 build {
-  sources = ["source.amazon-ebs.ec2-user"]
+  sources = ["source.amazon-ebs.ec2-user"
 
   provisioner "shell" {
     inline = ["sleep 10"]
